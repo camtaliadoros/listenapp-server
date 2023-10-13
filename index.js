@@ -14,6 +14,9 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(pino);
+app.get('/test', (req, res) => {
+  res.send('Hello');
+});
 
 app.post('/api/messages', (req, res) => {
   res.header('Content-Type', 'application/json');
