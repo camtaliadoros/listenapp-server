@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const pino = require('express-pino-logger')();
-const port = 3000;
+const port = 80;
 
 require('dotenv').config();
 
